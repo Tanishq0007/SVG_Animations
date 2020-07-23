@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#Leaf1 {
+    animation: leaf 1s ease infinite;
+    transform-origin: bottom;
+}
+#Leaf2 {
+    animation: leaf2 1s ease infinite;
+    transform-origin: bottom;
+}
+@keyframes leaf2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes leaf {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

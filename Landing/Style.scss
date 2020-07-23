@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#Girl, #Boy {
+    transition: 1s ease-out;
+}
+.image :hover {
+    #Girl {
+        transform: translateX(-50px);
+        transition: 1s ease-in-out;
+    }
+    #Boy {
+        transform: translateX(50px);
+        transition: 1s ease-in-out;
+    }
+}
+#Leaves1 {
+    animation: leaf 1s ease infinite;
+    transform-origin: bottom;
+}
+#Leaves2 {
+    animation: leaf2 1s ease infinite;
+    transform-origin: bottom;
+}
+@keyframes leaf2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes leaf {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
